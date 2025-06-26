@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Sticky Banner */
+.sticky-banner {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ff9800;
+    padding: 12px 20px;
+    font-weight: bold;
+    z-index: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Banner Link */
+.sticky-banner a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    padding: 6px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+    z-index: 1100;
+}
+
+.hamburger:hover {
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin: 5px 0;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 50%; /* Half of the page */
+    height: 200px; /* Equal height for all */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #ff9800;
+}
+
+.card p {
+    color: #333;
+    line-height: 1.5;
+}
